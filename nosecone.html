@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+    <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.
+css" crossorigin="anonymous">
+
+    <!-- ADD BOOTSTRAP CORE HERE!!!! -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+  </head>
+
+
+
+<body>
+
+  <div id="wrapper">
+
+
+    <div class="starter-template" >
+      <h1>Nosecone Club</h1>
+      <p align="justify" class="lead">Our NoseCone Club allows you to contribute towards SR-19, and in return we promise to donate towards helping our supported charity, the JBVC Foundation, who “Assist Young People to Leave Street Gangs & Develop Sustainable Careers”.
+        We ask for a minimum donation of £10 for the NoseCone Club, of which we will donate £5 to The JBVC Foundation. To acknowledge your contribution, we will proudly display a copy of your signature on the NoseCone of our 2018 car. <br><br> If you're interested in donating,
+      fill out the following form and we'll get in touch regarding next steps!</p>
+    </div>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #b5032a;">
+      <a class="navbar-brand" href="#">Mobil 1 Sussex Racing</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">The Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="car.html">The Car</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Silverstone 2018</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosecone.html">Nosecone Club</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+<div align="center">
+    <form method="post" action="//submit.form" onSubmit="return validateForm();">
+    <div style="width: 400px;">
+    </div>
+    <div style="padding-bottom: 18px;font-size : 24px;"></div>
+    <div style="display: flex; padding-bottom: 18px;width : 550px;">
+    <div style=" margin-left : 0; margin-right : 1%; width : 49%;">First name<br/>
+    <input type="text" id="data_2" name="data_2" style="width: 100%;" class="form-control"/>
+    </div>
+    <div style=" margin-left : 1%; margin-right : 0; width : 49%;">Last name<br/>
+    <input type="text" id="data_3" name="data_3" style="width: 100%;" class="form-control"/>
+    </div>
+    </div><div style="padding-bottom: 18px;">Email<br/>
+    <input type="text" id="data_4" name="data_4" style="width : 550px;" class="form-control"/>
+    </div>
+    <div style="padding-bottom: 18px;">Donation Amount<span style="color: red;"> *</span><br/>
+    <span><input type="radio" id="data_5_0" name="data_5" value="$50"/> £10</span><br/>
+    <span><input type="radio" id="data_5_1" name="data_5" value="$100"/> £15</span><br/>
+    <span><input type="radio" id="data_5_2" name="data_5" value="$250"/> £20</span><br/>
+    <span><input type="radio" id="data_5_3" name="data_5" value="$500"/> £30</span><br/>
+    </div>
+    <div style="padding-bottom: 18px;">Desired Signature<br/>
+    <textarea id="data_6" false name="data_6" style="width : 550px;" rows="3" class="form-control"></textarea>
+    </div>
+    <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+    <div>
+
+    </div>
+    </form>
+</div>
+    <script type="text/javascript">
+    function validateForm() {
+    if (!validateEmail(document.getElementById('data_4').value.trim())) {
+    alert('Email must be a valid email address!');
+    return false;
+    }
+    if (!document.getElementById('data_5_0').checked && !document.getElementById('data_5_1').checked && !document.getElementById('data_5_2').checked && !document.getElementById('data_5_3').checked ) {
+    alert('Donation Amount is required!');
+    return false;}
+    return true;
+    }
+    function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+    function validateEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+    return isEmpty(email) || re.test(email);
+    }
+    </script>
+
+
+
+
+</body>
