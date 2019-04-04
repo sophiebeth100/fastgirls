@@ -6,8 +6,15 @@ body {
   text-align: center;
 }
 
+body {background-color: 	#E5E5E5;}
+
 #wrapper {
 	width: 1000px;
+	margin: 0 auto;
+}
+
+#wrapper2 {
+	width: 1600px;
 	margin: 0 auto;
 }
 
@@ -29,4 +36,4 @@ html {
 	.btn-linkedin:active, .btn-linkedin:hover {
 	  background: #084461;
 	  color: #fff;
-	}  
+	}
